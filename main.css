@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  margin: 30px;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0
+}
+.introbox {
+  border: 2px solid green;
+  margin: 10px 25px 20px 15px;
+  width: 500px;
+}
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 5px;
+}
+.sectionbox {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 5px;
+}
+.start{
+  margin: 5px;
+}
+.score{
+  margin: 5px;
+}
+.lives{
+  margin: 5px;
+}
+.grid {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 600px;
+  flex-wrap: wrap;
+}
+.cell {
+  font-size: 5px;
+  background-color: cadetblue;
+}
+.holdingArea{
+  background-color: rebeccapurple;
+}
+.walls {
+  background-color: green;
+}
+.chicken {
+  background-color: white;
+}
+.bones {
+  background-color: black;
+}
+.winston {
+  background-image: url('https://i.pinimg.com/564x/8a/23/59/8a23597bcf4ff7c3b49203b61e0564aa.jpg');
+  background-size: contain;
+}
+.ghost1 {
+  background-color: pink;
+}
+.ghost2 {
+  background-color: red;
+}
+.ghost3 {
+  background-color: blue;
+}
+.ghost4 {
+  background-color: yellow;
+}
