@@ -1,22 +1,22 @@
-//let score = document.querySelector('.scorecount')
-//let lives = document.querySelector('.livescount')
-
-
 const grid = document.querySelector('.grid')
 const width = 18
 const cells = []
+const holdingArea = [115, 116, 117, 118, 133, 136, 150, 151, 154, 155, 169, 170, 171, 172]
 let winston = 243
 let ghost1 = 115
 let ghost2 = 118
 let ghost3 = 169
 let ghost4 = 172
 const walls = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 26, 27, 35, 36, 38, 39, 40, 41, 42, 44, 45, 47, 48, 49, 50, 51, 53, 54, 56, 57, 58, 59, 60, 62, 63, 65, 66, 67, 68, 69, 71, 72, 89, 90, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 107, 108, 114, 119, 125, 126, 127, 128, 129, 130, 132, 134, 135, 137, 139, 140, 141, 142, 143, 152, 153, 162, 163, 164, 165, 166, 168, 173, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 186, 187, 188, 189, 190, 191, 193, 194, 195, 196, 197, 198, 206, 207, 215, 216, 218, 219, 220, 222, 224, 225, 227, 229, 230, 231, 233, 234, 236, 237, 238, 240, 245, 247, 248, 249, 251, 252, 258, 259, 260, 261, 262, 263, 269, 270, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 287, 288, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323]
-console.log(walls)
 const chicken = [19, 34, 81, 199, 214, 321, 296]
-const holdingArea = [115, 116, 117, 118, 133, 136, 150, 151, 154, 155, 169, 170, 171, 172]
 let bones
-// create grid
+const scoreCount = document.querySelector('.scorecount')
+let score = 0
+const livesCount = document.querySelector('.livescount')
+let lives = 3
+const start = document.querySelector('.start')
 
+// ? create grid
 for (let index = 0; index < width ** 2; index++) {
   const cell = document.createElement('div')
   cell.classList.add('cell')
@@ -47,42 +47,131 @@ for (let index = 0; index < width ** 2; index++) {
   cell.style.height = `${100 / width}%`
 }
 
-
-
-// winston movements
+// winston movements with eating bones & chickens
 document.addEventListener('keydown', (event) => {
   const key = event.key
 
   if (key === 'ArrowRight' && !(winston % width === width - 1) && !(cells[winston + 1].classList.contains('walls')) && !(cells[winston + 1].classList.contains('holdingArea'))) {
     cells[winston].classList.remove('winston')
     winston += 1
+    if (cells[winston].classList.contains('bones')) {
+      cells[winston].classList.remove('bones')
+      score += 10
+      scoreCount.innerHTML = score
+    } else if (cells[winston].classList.contains('chicken')) {
+      cells[winston].classList.remove('chicken')
+      score += 25
+      scoreCount.innerHTML = score
+    }
     cells[winston].classList.add('winston')
   } else if (key === 'ArrowRight' && (winston === 161)) {
     cells[winston].classList.remove('winston')
     winston -= 17
+    if (cells[winston].classList.contains('bones')) {
+      cells[winston].classList.remove('bones')
+      score += 10
+      scoreCount.innerHTML = score
+    } else if (cells[winston].classList.contains('chicken')) {
+      cells[winston].classList.remove('chicken')
+      score += 25
+      scoreCount.innerHTML = score
+    }
     cells[winston].classList.add('winston')
   } else if (key === 'ArrowRight' && cells[winston + 1].classList.contains('walls')) {
     return
   } else if (key === 'ArrowLeft' && !(winston % width === 0) && !(cells[winston - 1].classList.contains('walls')) && !(cells[winston - 1].classList.contains('holdingArea'))) {
     cells[winston].classList.remove('winston')
     winston -= 1
+    if (cells[winston].classList.contains('bones')) {
+      cells[winston].classList.remove('bones')
+      score += 10
+      scoreCount.innerHTML = score
+    } else if (cells[winston].classList.contains('chicken')) {
+      cells[winston].classList.remove('chicken')
+      score += 25
+      scoreCount.innerHTML = score
+    }
     cells[winston].classList.add('winston')
   } else if (key === 'ArrowLeft' && (winston === 144)) {
     cells[winston].classList.remove('winston')
     winston += 17
+    if (cells[winston].classList.contains('bones')) {
+      cells[winston].classList.remove('bones')
+      score += 10
+      scoreCount.innerHTML = score
+    } else if (cells[winston].classList.contains('chicken')) {
+      cells[winston].classList.remove('chicken')
+      score += 25
+      scoreCount.innerHTML = score
+    }
     cells[winston].classList.add('winston')
   } else if (key === 'ArrowDown' && !(winston + width >= width ** 2) && !(cells[winston + width].classList.contains('walls'))) {
     cells[winston].classList.remove('winston')
     winston += width
+    if (cells[winston].classList.contains('bones')) {
+      cells[winston].classList.remove('bones')
+      score += 10
+      scoreCount.innerHTML = score
+    } else if (cells[winston].classList.contains('chicken')) {
+      cells[winston].classList.remove('chicken')
+      score += 25
+      scoreCount.innerHTML = score
+    }
     cells[winston].classList.add('winston')
   } else if (key === 'ArrowUp' && !(winston < width) && !(cells[winston - width].classList.contains('walls'))) {
     cells[winston].classList.remove('winston')
     winston -= width
+    if (cells[winston].classList.contains('bones')) {
+      cells[winston].classList.remove('bones')
+      score += 10
+      scoreCount.innerHTML = score
+    } else if (cells[winston].classList.contains('chicken')) {
+      cells[winston].classList.remove('chicken')
+      score += 25
+      scoreCount.innerHTML = score
+    }
     cells[winston].classList.add('winston')
   }
+  console.log(score)
 })
-
 /*
 Random ghost movements
 - randomly moves in a continous direction until the ghost hits a wall then changes direction
+if applicable: replaces bones or chicken with ghost class then goes back to chick 
 */
+// code to get the ghosts out of the holding area
+
+// ghost 1
+function moveLeft() {
+  if (ghost1 === 151) {
+    const leftInterval = setInterval(() => {
+      cells[ghost1].classList.remove('ghost1')
+      ghost1 -= 1
+      cells[ghost1].classList.add('ghost1')
+    }, 500, 2)
+    setTimeout(() => {
+      clearInterval(leftInterval)
+      cells[ghost1].classList.remove('bones')
+    }, 1000)
+  }
+}
+function randomMovements() {
+  if (cells[ghost1] !== cells[holdingArea]) {
+    cells[ghost1].classList.remove('ghost1')
+    ghost1 = Math.floor(Math.random() * cells.length)
+    cells[ghost1].classList.add('ghost1')
+  }
+}
+
+start.addEventListener('click', () => {
+  const downInterval = setInterval(() => {
+    cells[ghost1].classList.remove('ghost1')
+    ghost1 += 18
+    cells[ghost1].classList.add('ghost1')
+  }, 500, 2)
+  setTimeout(() => {
+    clearInterval(downInterval)
+    moveLeft()
+  }, 1000)
+})
+

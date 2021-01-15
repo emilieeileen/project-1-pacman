@@ -1,19 +1,18 @@
 * {
   box-sizing: border-box;
 }
-header {
-  margin: 30px;
-}
 body {
+  background-image: url('https://media.istockphoto.com/vectors/corgi-butt-cartoon-seamless-pattern-vector-illustration-vector-id1150357078?k=6&m=1150357078&s=612x612&w=0&h=QX6ndZrf8N2VvHjWFjbHysskSi8LsbOqi-DwchRWtx0=');
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin: 0
+  margin: 0;
 }
 .introbox {
-  border: 2px solid green;
+  background: white;
+  border: 2px solid lightblue;
   margin: 10px 25px 20px 15px;
   width: 500px;
 }
@@ -54,12 +53,16 @@ body {
 }
 .walls {
   background-color: green;
+  background-size: contain;
 }
 .chicken {
-  background-color: white;
+  background-image: url('https://image.flaticon.com/icons/png/512/1206/1206237.png');
+  background-size: contain;
 }
 .bones {
-  background-color: black;
+  background-color: white;
+  background-size: contain;
+  color: black;
 }
 .winston {
   background-image: url('https://i.pinimg.com/564x/8a/23/59/8a23597bcf4ff7c3b49203b61e0564aa.jpg');
