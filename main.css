@@ -43,6 +43,7 @@ body {
   width: 600px;
   height: 600px;
   flex-wrap: wrap;
+  border: 6px solid navy;
 }
 .cell {
   font-size: 5px;
@@ -79,4 +80,7 @@ body {
 }
 .ghost4 {
   background-color: yellow;
+}
+.blueghost {
+  background-color: orange;
 }
