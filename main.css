@@ -13,16 +13,18 @@ body {
 }
 .introbox {
   background: lightblue;
-  border: 3px solid lightgreen;
+  border: 6px solid lightgreen;
   margin: 10px 25px 20px 15px;
   width: 500px;
 }
 #title {
   text-align: center;
+  color: navy;
 }
 #rules {
-  padding: 3px;
-  margin: 5px;
+  padding: 5px;
+  margin: 10px;
+  color: navy;
 }
 .details {
   display: flex;
@@ -38,14 +40,19 @@ body {
 }
 .start{
   margin: 5px;
+  padding: 3px 10px 3px 10px;
   background-color: lightgreen;
   border: 1px solid lightblue;
+  font-family: Futura;
+  color: navy;
 }
 .score{
   margin: 5px;
+  color: navy;
 }
 .lives{
   margin: 5px;
+  color: navy;
 }
 .grid {
   display: flex;
@@ -60,7 +67,7 @@ body {
   background-color: cadetblue;
 }
 .holdingArea{
-  background-color: cadetblue3;
+  background-color: cadetblue;
 }
 .walls {
   background-color: lightgreen;
@@ -95,7 +102,7 @@ body {
   background-image: url('https://www.flaticon.com/svg/vstatic/svg/1864/1864480.svg?token=exp=1610973564~hmac=21d2bd32c23e158ca829bd5a1d056c99');
   background-size: contain;
 }
-.blueghost {
-  background-image: url('https://www.flaticon.com/svg/vstatic/svg/1581/1581657.svg?token=exp=1610973691~hmac=21066523650cf66dc6d8deb9af3e08a0');
+.dogball {
+  background-image: url('https://www.flaticon.com/svg/vstatic/svg/3436/3436558.svg?token=exp=1610982012~hmac=17c40700bc28e5b8dee7af1a2eec9957');
   background-size: contain;
 }
