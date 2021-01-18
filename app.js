@@ -47,7 +47,7 @@ for (let index = 0; index < width ** 2; index++) {
   }
   grid.appendChild(cell)
   cells.push(cell)
-  cell.innerHTML = index
+  
 
   cell.style.width = `${100 / width}%`
   cell.style.height = `${100 / width}%`
@@ -60,8 +60,7 @@ document.addEventListener('keydown', (event) => {
   if (key === 'ArrowRight' && !(winston % width === width - 1) && !(cells[winston + 1].classList.contains('walls')) && !(cells[winston + 1].classList.contains('holdingArea'))) {
     cells[winston].classList.remove('winston')
     winston += 1
-    if (cells[winston].classList.contains('ghost1') || cells[winston].classList.contains('ghost2') || cells[winston].classList.contains('ghost3') || cells[winston].classList.contains('ghost4')) { //add other ghosts
-      console.log('ghosts')
+    if (cells[winston].classList.contains('ghost1') || cells[winston].classList.contains('ghost2') || cells[winston].classList.contains('ghost3') || cells[winston].classList.contains('ghost4')) { 
       cells[ghost1].classList.remove('winston')
       lives -= 1
       livesCount.innerHTML = lives
@@ -93,8 +92,7 @@ document.addEventListener('keydown', (event) => {
   } else if (key === 'ArrowLeft' && !(winston % width === 0) && !(cells[winston - 1].classList.contains('walls')) && !(cells[winston - 1].classList.contains('holdingArea'))) {
     cells[winston].classList.remove('winston')
     winston -= 1
-    if (cells[winston].classList.contains('ghost1') || cells[winston].classList.contains('ghost2') || cells[winston].classList.contains('ghost3') || cells[winston].classList.contains('ghost4')) { //add other ghosts
-      console.log('ghosts')
+    if (cells[winston].classList.contains('ghost1') || cells[winston].classList.contains('ghost2') || cells[winston].classList.contains('ghost3') || cells[winston].classList.contains('ghost4')) { 
       cells[ghost1].classList.remove('winston')
       lives -= 1
       livesCount.innerHTML = lives
@@ -123,7 +121,6 @@ document.addEventListener('keydown', (event) => {
     cells[winston].classList.remove('winston')
     winston += width
     if (cells[winston].classList.contains('ghost1') || cells[winston].classList.contains('ghost2') || cells[winston].classList.contains('ghost3') || cells[winston].classList.contains('ghost4')) {
-      console.log('ghosts')
       cells[ghost1].classList.remove('winston')
       lives -= 1
       livesCount.innerHTML = lives

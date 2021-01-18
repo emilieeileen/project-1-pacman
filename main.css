@@ -9,10 +9,11 @@ body {
   align-items: center;
   flex-direction: row;
   margin: 0;
+  font-family: Futura;
 }
 .introbox {
   background: lightblue;
-  border: 3px solid pink;
+  border: 3px solid lightgreen;
   margin: 10px 25px 20px 15px;
   width: 500px;
 }
@@ -37,6 +38,8 @@ body {
 }
 .start{
   margin: 5px;
+  background-color: lightgreen;
+  border: 1px solid lightblue;
 }
 .score{
   margin: 5px;
@@ -50,17 +53,17 @@ body {
   width: 600px;
   height: 600px;
   flex-wrap: wrap;
-  border: 6px solid navy;
+  border: 6px solid lightblue;
 }
 .cell {
   font-size: 5px;
   background-color: cadetblue;
 }
 .holdingArea{
-  background-color: rebeccapurple;
+  background-color: cadetblue3;
 }
 .walls {
-  background-color: green;
+  background-color: lightgreen;
   background-size: contain;
 }
 .chicken {
@@ -68,26 +71,31 @@ body {
   background-size: contain;
 }
 .bones {
-  background-color: white;
+  background-image: url('https://www.flaticon.com/svg/vstatic/svg/4001/4001639.svg?token=exp=1610972370~hmac=d8ba04d82c1bff8e3ea6af1feab0d0b7');
   background-size: contain;
   color: black;
 }
 .winston {
-  background-image: url('https://i.pinimg.com/564x/8a/23/59/8a23597bcf4ff7c3b49203b61e0564aa.jpg');
+  background-image: url('https://www.flaticon.com/premium-icon/icons/svg/2926/2926751.svg');
   background-size: contain;
 }
 .ghost1 {
-  background-color: pink;
+  background-image: url('https://www.flaticon.com/svg/vstatic/svg/1588/1588876.svg?token=exp=1610973073~hmac=9b1368d788c11a60c1129acdb02d5eb5');
+  background-size: contain;
 }
 .ghost2 {
-  background-color: red;
+  background-image: url('https://www.flaticon.com/svg/vstatic/svg/616/616736.svg?token=exp=1610973484~hmac=f28ade89e924821ec4fb71a19e5aa4c8');
+  background-size: cover;
 }
 .ghost3 {
-  background-color: orange;
+  background-image: url('https://www.flaticon.com/svg/vstatic/svg/604/604188.svg?token=exp=1610973283~hmac=a386b807b077e0e5dfb5132cc222c557');
+  background-size: contain;
 }
 .ghost4 {
-  background-color: yellow;
+  background-image: url('https://www.flaticon.com/svg/vstatic/svg/1864/1864480.svg?token=exp=1610973564~hmac=21d2bd32c23e158ca829bd5a1d056c99');
+  background-size: contain;
 }
 .blueghost {
-  background-color: blue;
+  background-image: url('https://www.flaticon.com/svg/vstatic/svg/1581/1581657.svg?token=exp=1610973691~hmac=21066523650cf66dc6d8deb9af3e08a0');
+  background-size: contain;
 }
