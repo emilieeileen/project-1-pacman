@@ -11,10 +11,17 @@ body {
   margin: 0;
 }
 .introbox {
-  background: white;
-  border: 2px solid lightblue;
+  background: lightblue;
+  border: 3px solid pink;
   margin: 10px 25px 20px 15px;
   width: 500px;
+}
+#title {
+  text-align: center;
+}
+#rules {
+  padding: 3px;
+  margin: 5px;
 }
 .details {
   display: flex;
@@ -76,11 +83,11 @@ body {
   background-color: red;
 }
 .ghost3 {
-  background-color: blue;
+  background-color: orange;
 }
 .ghost4 {
   background-color: yellow;
 }
 .blueghost {
-  background-color: orange;
+  background-color: blue;
 }
