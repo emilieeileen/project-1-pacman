@@ -9,11 +9,12 @@
 <body>
   <div class = 'introbox'>
     <h1 id='title'>The Adventures of Winston</h1>
-    <p id='rules'>Meet Winston, a very brave corgi who needs to collect all the bones from the backyard. However, the pesky squirrels keep getting in his way. Collect all the bones before the squirrels catch Winston. However, if Winston eats some chicken, the squirrels turn into squeaky balls and he can chase them down for some extra points!<br /><br />Please don't eat the chicken until all the squirrels are out of the holding area!</p>
+    <p id='rules'>Meet Winston, a very brave corgi who needs to collect all the bones from the backyard. However, the pesky squirrels keep getting in his way. Collect all the bones before the squirrels catch Winston. However, if Winston eats some chicken, the squirrels turn into squeaky balls and he can chase them down for some extra points!</p>
+    <section class='sectionbox'><button class='start' onclick='winstonGame()'>Start Game</button></section>
     <section class='details'>
-      <section class='sectionbox'><button class='start' onclick='winstonGame()'>Start Game</button></section>
       <section class='sectionbox'><div class='score'>Score: <span class='scorecount'>0</span></div></section>
       <section class='sectionbox'><div class='lives'>Lives left: <span class='livescount'>3</span></div></section>
+      <section class='sectionbox'><button class='restart' onclick='restartGame()'>Restart Game</button></section>
     </section>
   </div>
   <div class="grid">

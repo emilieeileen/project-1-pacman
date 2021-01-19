@@ -54,6 +54,14 @@ body {
   margin: 5px;
   color: navy;
 }
+.restart {
+  margin: 5px;
+  padding: 3px 10px 3px 10px;
+  background-color: lightgreen;
+  border: 2px solid navy;
+  font-family: Futura;
+  color: navy;
+}
 .grid {
   display: flex;
   flex-direction: row;
