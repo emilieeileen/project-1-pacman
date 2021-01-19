@@ -70,19 +70,6 @@ body {
   flex-wrap: wrap;
   border: 2px solid lightblue;
 }
-#overlay {
-  position: fixed;
-  display: block;
-  margin: 4% 10% 9% 48%;
-  width: 600px;
-  height: 600px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-}
 .cell {
   font-size: 5px;
   background-color: cadetblue;
