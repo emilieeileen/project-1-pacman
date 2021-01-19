@@ -79,15 +79,15 @@ body {
 }
 .walls {
   background-color: lightgreen;
-  background-image: url('https://www.flaticon.com/svg/vstatic/svg/616/616707.svg?token=exp=1611070031~hmac=dd84af2b43e24ccf438969980e995d3a');
+  background-image: url('../imgs/trees.png');
   background-size: contain;
 }
 .chicken {
-  background-image: url('https://image.flaticon.com/icons/png/512/1206/1206237.png');
+  background-image: url('../imgs/chicken-leg.png');
   background-size: contain;
 }
 .bones {
-  background-image: url('https://www.flaticon.com/svg/vstatic/svg/4001/4001639.svg?token=exp=1610972370~hmac=d8ba04d82c1bff8e3ea6af1feab0d0b7');
+  background-image: url('../imgs/bone.png');
   background-size: contain;
   color: black;
 }
@@ -96,22 +96,22 @@ body {
   background-size: contain;
 }
 .ghost1 {
-  background-image: url('https://www.flaticon.com/svg/vstatic/svg/1588/1588876.svg?token=exp=1610973073~hmac=9b1368d788c11a60c1129acdb02d5eb5');
+  background-image: url('../imgs/squirrel1.png');
   background-size: contain;
 }
 .ghost2 {
-  background-image: url('https://www.flaticon.com/svg/vstatic/svg/616/616736.svg?token=exp=1610973484~hmac=f28ade89e924821ec4fb71a19e5aa4c8');
+  background-image: url('../imgs/squirrel2.png');
   background-size: cover;
 }
 .ghost3 {
-  background-image: url('https://www.flaticon.com/svg/vstatic/svg/604/604188.svg?token=exp=1610973283~hmac=a386b807b077e0e5dfb5132cc222c557');
+  background-image: url('../imgs/squirrel3.png');
   background-size: contain;
 }
 .ghost4 {
-  background-image: url('https://www.flaticon.com/svg/vstatic/svg/1864/1864480.svg?token=exp=1610973564~hmac=21d2bd32c23e158ca829bd5a1d056c99');
+  background-image: url('../imgs/squirrel4.png');
   background-size: contain;
 }
 .dogball {
-  background-image: url('https://www.flaticon.com/svg/vstatic/svg/1687/1687322.svg?token=exp=1611050312~hmac=35b100eb01796434405a12a35a01e10f');
+  background-image: url('../imgs/ball.png');
   background-size: contain;
 }
