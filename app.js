@@ -1,5 +1,18 @@
 //set all these into a winstonGame()function
+
+function on() {
+  document.getElementById('overlay').style.display = 'block'
+}
+
+function off() {
+  document.getElementById('overlay').style.display = 'none'
+}
+
+//on()
+
+
 //function winstonGame() {
+  // off()
 const grid = document.querySelector('.grid')
 const width = 18
 const cells = []
@@ -48,6 +61,7 @@ for (let index = 0; index < width ** 2; index++) {
     cell.classList.add('chicken')
   } else if (holdingArea.includes(index)) {
     cell.classList.add('holdingArea')
+  
   } else {
     cell.classList.add('bones')
   }
