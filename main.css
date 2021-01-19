@@ -42,7 +42,7 @@ body {
   margin: 5px;
   padding: 3px 10px 3px 10px;
   background-color: lightgreen;
-  border: 1px solid lightblue;
+  border: 2px solid navy;
   font-family: Futura;
   color: navy;
 }
@@ -62,6 +62,7 @@ body {
   flex-wrap: wrap;
   border: 6px solid lightblue;
 }
+
 .cell {
   font-size: 5px;
   background-color: cadetblue;
@@ -103,6 +104,6 @@ body {
   background-size: contain;
 }
 .dogball {
-  background-image: url('https://www.flaticon.com/svg/vstatic/svg/3436/3436558.svg?token=exp=1610982012~hmac=17c40700bc28e5b8dee7af1a2eec9957');
+  background-image: url('https://www.flaticon.com/svg/vstatic/svg/1687/1687322.svg?token=exp=1611050312~hmac=35b100eb01796434405a12a35a01e10f');
   background-size: contain;
 }
