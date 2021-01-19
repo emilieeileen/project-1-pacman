@@ -62,13 +62,26 @@ body {
   font-family: Futura;
   color: navy;
 }
+#overlay {
+  position: fixed;
+  display: block;
+  margin: 4% 10% 9% 48%;
+  width: 600px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../imgs/winston_in_sag_harbor.jpg');
+  background-size: cover;
+  z-index: 2; /* Specify a stack order in case you’re using a different order for other elements */
+}
 .grid {
   display: flex;
   flex-direction: row;
   width: 600px;
   height: 600px;
   flex-wrap: wrap;
-  border: 2px solid lightblue;
 }
 .cell {
   font-size: 5px;
