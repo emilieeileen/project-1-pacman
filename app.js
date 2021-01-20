@@ -7,8 +7,16 @@ function off() {
 }
 on()
 
+let playerScores = []
+const scoreList = document.querySelector('ol')
+const start = document.querySelector('.start')
+let score = 0
+
+
+
 // onclick function to start game
 function winstonGame() {
+  start.onclick = ''
   off()
 
   const grid = document.querySelector('.grid')
@@ -32,11 +40,9 @@ function winstonGame() {
 
   let boneCount = 117
   const scoreCount = document.querySelector('.scorecount')
-  let score = 0
   const livesCount = document.querySelector('.livescount')
   let lives = 3
   lives.innerHTML = 3
-  const start = document.querySelector('.start')
 
 
   // ? create grid
@@ -81,6 +87,7 @@ function winstonGame() {
       if (cells[winston].classList.contains('dogball')) {
         cells[winston].classList.remove('dogball')
         score += 50
+        scoreCount.innerHTML = score
         scoreCount.innerHTML = score
         if (cells[winston].classList.contains('ghost1')) {
           cells[winston].classList.remove('ghost1')
@@ -412,8 +419,6 @@ function winstonGame() {
   }
 
 
-
-
   // ghost 1 out of holding
   function moveLeft() {
     if (ghost1 === 151) {
@@ -534,7 +539,7 @@ function winstonGame() {
 
 
 
-  // ? turns ghosts/squirrels into dog balls. current issues 
+  // turns ghosts/squirrels into dog balls. current issues 
   function setDogBalls() {
     if (cells[winston].classList.contains('chicken')) {
       const dogballTimer = setInterval(() => {
@@ -635,16 +640,16 @@ function winstonGame() {
   // check lives
   function checkLives() {
     if (lives === 0) {
-      alert(`Thanks for playing! Your score was ${score}!`)
+      alert(`Those darn squirrels! Your score was ${score}! Better luck next time!`)
       window.location.reload()
     } else
       return
   }
 
   function checkForWin() {
-    //   // if grid does not contain any cells with class of bones
+    // if grid does not contain any cells with class of bones
     if (boneCount === 0) {
-      alert(`You win! Your score was ${score}!`)
+      alert(`You win and Winston is victorious! Your score was ${score}!`)
       window.location.reload()
     } else {
       return
