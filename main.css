@@ -75,7 +75,7 @@ body {
   background-image: url('../project-1-pacman/imgs/winston_in_sag_harbor.png');
   background-size: cover;
   z-index: 2; 
-  border: 6px solid lightblue;
+  border: 6px solid navy;
 }
 .grid {
   display: flex;
@@ -106,7 +106,7 @@ body {
   color: black;
 }
 .winston {
-  background-image: url('https://www.flaticon.com/premium-icon/icons/svg/2926/2926751.svg');
+  background-image: url('../project-1-pacman/imgs/corgi_icon.png');
   background-size: cover;
 }
 .ghost1 {
@@ -127,5 +127,143 @@ body {
 }
 .dogball {
   background-image: url('../project-1-pacman/imgs/ball.png');
+  background-size: contain;
+}
+
+
+
+https://www.flaticon.com/premium-icon/icons/svg/2926/2926751.svg
+
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url('./imgs/corgibackground.png');
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  font-family: Futura;
+}
+.introbox {
+  background: lightblue;
+  border: 6px solid lightgreen;
+  margin: 10px 25px 20px 15px;
+  width: 500px;
+}
+#title {
+  text-align: center;
+  color: navy;
+}
+#rules {
+  padding: 5px;
+  margin: 10px;
+  color: navy;
+}
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 5px;
+}
+.sectionbox {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 5px;
+}
+.start{
+  margin: 5px;
+  padding: 3px 10px 3px 10px;
+  background-color: lightgreen;
+  border: 2px solid navy;
+  font-family: Futura;
+  color: navy;
+}
+.score{
+  margin: 5px;
+  color: navy;
+}
+.lives{
+  margin: 5px;
+  color: navy;
+}
+.restart {
+  margin: 5px;
+  padding: 3px 10px 3px 10px;
+  background-color: lightgreen;
+  border: 2px solid navy;
+  font-family: Futura;
+  color: navy;
+}
+#overlay {
+  position: fixed;
+  display: none;
+  margin: 4% 10% 9% 48%;
+  width: 600px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./imgs/winston_in_sag_harbor.png');
+  background-size: cover;
+  z-index: 2; 
+  border: 6px solid navy;
+}
+.grid {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 600px;
+  flex-wrap: wrap;
+}
+.cell {
+  font-size: 5px;
+  background-color: cadetblue;
+}
+.holdingArea{
+  background-color: cadetblue;
+}
+.walls {
+  background-color: lightgreen;
+  background-image: url('./imgs/trees.png');
+  background-size: contain;
+}
+.chicken {
+  background-image: url('./imgs/chicken-leg.png');
+  background-size: contain;
+}
+.bones {
+  background-image: url('./imgs/bone.png');
+  background-size: contain;
+  color: black;
+}
+.winston {
+  background-image: url('./imgs/corgi_icon.png');
+  background-size: cover;
+}
+.ghost1 {
+  background-image: url('./imgs/squirrel1.png');
+  background-size: contain;
+}
+.ghost2 {
+  background-image: url('./imgs/squirrel2.png');
+  background-size: cover;
+}
+.ghost3 {
+  background-image: url('./imgs/squirrel3.png');
+  background-size: contain;
+}
+.ghost4 {
+  background-image: url('./imgs/squirrel4.png');
+  background-size: contain;
+}
+.dogball {
+  background-image: url('./imgs/ball.png');
   background-size: contain;
 }
