@@ -1,4 +1,4 @@
-//set all these into a winstonGame()function
+//for the winston overlay
 function on() {
   document.getElementById('overlay').style.display = 'block'
 }
@@ -6,6 +6,8 @@ function off() {
   document.getElementById('overlay').style.display = 'none'
 }
 on()
+
+// onclick function to start game
 function winstonGame() {
   off()
 
@@ -229,8 +231,8 @@ function winstonGame() {
         boneCount--
         score += 10
         scoreCount.innerHTML = score
-        cells[winston].classList.add('winston')
       }
+      cells[winston].classList.add('winston')
     } else if (key === 'ArrowDown' && !(winston + width >= width ** 2) && !(cells[winston + width].classList.contains('walls'))) {
       cells[winston].classList.remove('winston')
       winston += width
@@ -648,8 +650,7 @@ function winstonGame() {
       return
     }
   }
-
-  function restartGame() {
-    window.location.reload()
-  }
+}
+function resetGame() {
+  window.location.reload()
 }
