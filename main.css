@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url('https://image.freepik.com/free-vector/cute-welsh-corgi-long-tail-running-cartoon-seamless-pattern_42750-476.jpg');
+  background-image: url('../project-1-pacman/corgibackground.png');
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -72,7 +72,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../project-1-pacman/imgs/winston_in_sag_harbor.jpg');
+  background-image: url('../project-1-pacman/imgs/winston_in_sag_harbor.png');
   background-size: cover;
   z-index: 2; 
   border: 6px solid lightblue;
@@ -106,8 +106,8 @@ body {
   color: black;
 }
 .winston {
-  background-image: url('https://www.flaticon.com/premium-icon/icons/svg/2926/2926751.svg');
-  background-size: contain;
+  background-image: url('./imgs/kisspng-pembroke-welsh-corgi-cardigan-welsh-corgi-icelandi-corgi-5b0bb8bf6d7646.9174522215274948474484.png');
+  background-size: cover;
 }
 .ghost1 {
   background-image: url('../project-1-pacman/imgs/squirrel1.png');
