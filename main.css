@@ -72,7 +72,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../imgs/winston_in_sag_harbor.jpg');
+  background-image: url('../project-1-pacman/imgs/winston_in_sag_harbor.jpg');
   background-size: cover;
   z-index: 2; 
   border: 6px solid lightblue;
@@ -93,15 +93,15 @@ body {
 }
 .walls {
   background-color: lightgreen;
-  background-image: url('./imgs/trees.png');
+  background-image: url('../project-1-pacman/imgs/trees.png');
   background-size: contain;
 }
 .chicken {
-  background-image: url('./imgs/chicken-leg.png');
+  background-image: url('../project-1-pacman/imgs/chicken-leg.png');
   background-size: contain;
 }
 .bones {
-  background-image: url('./imgs/bone.png');
+  background-image: url('../project-1-pacman/imgs/bone.png');
   background-size: contain;
   color: black;
 }
@@ -110,22 +110,22 @@ body {
   background-size: contain;
 }
 .ghost1 {
-  background-image: url('./imgs/squirrel1.png');
+  background-image: url('../project-1-pacman/imgs/squirrel1.png');
   background-size: contain;
 }
 .ghost2 {
-  background-image: url('./imgs/squirrel2.png');
+  background-image: url('../project-1-pacman/imgs/squirrel2.png');
   background-size: cover;
 }
 .ghost3 {
-  background-image: url('./imgs/squirrel3.png');
+  background-image: url('../project-1-pacman/imgs/squirrel3.png');
   background-size: contain;
 }
 .ghost4 {
-  background-image: url('./imgs/squirrel4.png');
+  background-image: url('../project-1-pacman/imgs/squirrel4.png');
   background-size: contain;
 }
 .dogball {
-  background-image: url('./imgs/ball.png');
+  background-image: url('../project-1-pacman/imgs/ball.png');
   background-size: contain;
 }
