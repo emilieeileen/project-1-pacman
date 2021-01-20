@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url('../project-1-pacman/corgibackground.png');
+  background-image: url('../project-1-pacman/imgs/corgibackground.png');
   height: 100vh;
   display: flex;
   justify-content: center;
