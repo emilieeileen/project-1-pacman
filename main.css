@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url('../project-1-pacman/corgibackground.png');
+  background-image: url('../project-1-pacman/imgs/corgibackground.png');
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -106,7 +106,7 @@ body {
   color: black;
 }
 .winston {
-  background-image: url('./imgs/kisspng-pembroke-welsh-corgi-cardigan-welsh-corgi-icelandi-corgi-5b0bb8bf6d7646.9174522215274948474484.png');
+  background-image: url('../project-1-pacman/imgs/kisspng-pembroke-welsh-corgi-cardigan-welsh-corgi-icelandi-corgi-5b0bb8bf6d7646.9174522215274948474484.png');
   background-size: cover;
 }
 .ghost1 {
