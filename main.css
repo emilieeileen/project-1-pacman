@@ -62,10 +62,30 @@ body {
   font-family: Futura;
   color: navy;
 }
+ol {
+  color: navy;
+  text-align:  center;
+  display: flex;
+  flex-direction: column;
+}
+li {
+  padding: 5px;
+}
+h2 {
+  color: navy;
+  text-align:  center;
+  margin: 0 auto;
+}
+.grid {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 600px;
+  flex-wrap: wrap;
+}
 #overlay {
-  position: fixed;
+  position: relative;
   display: none;
-  margin: 4% 10% 9% 48%;
   width: 600px;
   height: 600px;
   top: 0;
@@ -77,13 +97,7 @@ body {
   z-index: 2; 
   border: 6px solid navy;
 }
-.grid {
-  display: flex;
-  flex-direction: row;
-  width: 600px;
-  height: 600px;
-  flex-wrap: wrap;
-}
+
 .cell {
   font-size: 5px;
   background-color: cadetblue;

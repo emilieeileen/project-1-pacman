@@ -1,29 +1,51 @@
 //for the winston overlay
 function on() {
   document.getElementById('overlay').style.display = 'block'
+  document.querySelector('.grid').style.display = 'flex'
 }
 function off() {
   document.getElementById('overlay').style.display = 'none'
+  document.querySelector('.grid').style.display = 'flex'
 }
 on()
 
+const start = document.querySelector('.start')
+
 let playerScores = []
 const scoreList = document.querySelector('ol')
-const start = document.querySelector('.start')
-let score = 0
 
-
+if (localStorage) {
+  playerScores = JSON.parse(localStorage.getItem('scoreboard')) || [ 
+    { name: 'Rosie', finalScore: 1510 },
+    { name: 'Rebecca', finalScore: 1370 },
+    { name: 'Winston', finalScore: 1720 },
+    { name: 'Zuba', finalScore: 1660 },
+    { name: 'Emma', finalScore: 1040 }
+  ]
+}
+function orderAndDisplayScores() {
+  const array = playerScores
+    .sort((playerA, playerB) => playerB.finalScore - playerA.finalScore)
+    .slice(0, 5)
+    .map(player => {
+      return `<li>
+     ${player.name}: ${player.finalScore}
+     </li>`
+    })
+  scoreList.innerHTML = array.join('')
+}
+orderAndDisplayScores()
 
 // onclick function to start game
 function winstonGame() {
   start.onclick = ''
   off()
-
+  orderAndDisplayScores()
   const grid = document.querySelector('.grid')
   const width = 18
   const cells = []
   const holdingArea = [115, 116, 117, 118, 133, 136, 150, 151, 154, 155, 169, 170, 171, 172]
-
+  let score = 0
   let winston = 243
   let ghost1 = 115
   let ghost2 = 118
@@ -637,19 +659,36 @@ function winstonGame() {
     }
   }
 
-  // check lives
+  // check lives. Runs code for localStorage with scoreboard
   function checkLives() {
     if (lives === 0) {
       alert(`Those darn squirrels! Your score was ${score}! Better luck next time!`)
+      const newName = prompt('Please enter your name!')
+      const newScore = score
+      const player = { name: newName, finalScore: newScore }
+      playerScores.push(player)
+      if (localStorage) {
+        localStorage.setItem('scoreboard', JSON.stringify(playerScores))
+        orderAndDisplayScores()
+      }
       window.location.reload()
     } else
       return
   }
 
+  // check for win. Runs code for localStorage with scoreboard
   function checkForWin() {
     // if grid does not contain any cells with class of bones
     if (boneCount === 0) {
       alert(`You win and Winston is victorious! Your score was ${score}!`)
+      const newName = prompt('Please enter your name!')
+      const newScore = score
+      const player = { name: newName, finalScore: newScore }
+      playerScores.push(player)
+      if (localStorage) {
+        localStorage.setItem('scoreboard', JSON.stringify(playerScores))
+        orderAndDisplayScores()
+      }
       window.location.reload()
     } else {
       return
@@ -659,3 +698,4 @@ function winstonGame() {
 function resetGame() {
   window.location.reload()
 }
+
