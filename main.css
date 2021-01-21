@@ -9,7 +9,7 @@ body {
   align-items: center;
   flex-direction: row;
   margin: 0;
-  font-family: Futura;
+  font-family: Futura, sans-serif;
 }
 .introbox {
   background: lightblue;
@@ -44,7 +44,7 @@ body {
   padding: 3px 10px 3px 10px;
   background-color: lightgreen;
   border: 2px solid navy;
-  font-family: Futura;
+  font-family: Futura, sans-serif;
   color: navy;
 }
 .score{
@@ -60,7 +60,7 @@ body {
   padding: 3px 10px 3px 10px;
   background-color: lightgreen;
   border: 2px solid navy;
-  font-family: Futura;
+  font-family: Futura, sans-serif;
   color: navy;
 }
 .scoreboard{
