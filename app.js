@@ -18,7 +18,7 @@ if (localStorage) {
   playerScores = JSON.parse(localStorage.getItem('scoreboard')) || [ 
     { name: 'Rosie', finalScore: 1510 },
     { name: 'Rebecca', finalScore: 1370 },
-    { name: 'Winston', finalScore: 1720 },
+    { name: 'Winston', finalScore: 1810 },
     { name: 'Zuba', finalScore: 1660 },
     { name: 'Emma', finalScore: 1040 }
   ]
