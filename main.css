@@ -24,6 +24,7 @@ body {
 #rules {
   padding: 5px;
   margin: 10px;
+  text-align: left;
   color: navy;
 }
 .details {
@@ -62,6 +63,13 @@ body {
   font-family: Futura;
   color: navy;
 }
+.scoreboard{
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
 ol {
   color: navy;
   text-align:  center;
@@ -75,6 +83,10 @@ h2 {
   color: navy;
   text-align:  center;
   margin: 0 auto;
+}
+#source {
+  text-align: center;
+  color: navy;
 }
 .grid {
   display: flex;
@@ -97,7 +109,6 @@ h2 {
   z-index: 2; 
   border: 6px solid navy;
 }
-
 .cell {
   font-size: 5px;
   background-color: cadetblue;
