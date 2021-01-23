@@ -15,7 +15,7 @@ let playerScores = []
 const scoreList = document.querySelector('ol')
 
 if (localStorage) {
-  playerScores = JSON.parse(localStorage.getItem('scoreboard')) || [ 
+  playerScores = JSON.parse(localStorage.getItem('scoreboard')) || [
     { name: 'Rosie', finalScore: 1510 },
     { name: 'Rebecca', finalScore: 1370 },
     { name: 'Winston', finalScore: 1810 },
@@ -304,6 +304,7 @@ function winstonGame() {
         scoreCount.innerHTML = score
       }
       cells[winston].classList.add('winston')
+      
 
     } else if (key === 'ArrowUp' && !(winston < width) && !(cells[winston - width].classList.contains('walls'))) {
       cells[winston].classList.remove('winston')
