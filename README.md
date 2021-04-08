@@ -8,6 +8,7 @@ This is my first project of the software engineering immersive course at GA Lond
 
 I chose to create a game based on Pac Man, using my dog, Winston, as the inspiration for themeing and design. 
 
+You can play the game here (it works best on a desktop): https://emilieeileen.github.io/project-1-pacman/
 ## Brief
 
 - **Render a game in the browser**
@@ -27,7 +28,16 @@ I chose to create a game based on Pac Man, using my dog, Winston, as the inspira
 - Canva
 - Flat Icon
 
-## Approach
+## Screenshots
+
+Homepage
+![Home page for The Adventures of Winston](imgs/homepage.png)
+
+Gameboard 
+![GameBoard](imgs/gameboard.png)
+
+Gameboard with Squirrels as Squeaky Toys
+![close up of gameboard with squeaky toys activated](imgs/squeakytoy_gameboard.png)
 ### Board layout 
 
 I decided to use a grid based board for my layout. To achieve this, I created a For Loop, which generated new cells, creating a 18x18 grid.
