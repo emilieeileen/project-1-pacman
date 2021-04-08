@@ -34,6 +34,7 @@ Homepage
 ![Home page for The Adventures of Winston](imgs/homepage.png)
 
 Gameboard 
+
 ![GameBoard](imgs/gameboard.png)
 
 Gameboard with Squirrels as Squeaky Toys
