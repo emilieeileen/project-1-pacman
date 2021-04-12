@@ -185,6 +185,16 @@ When the player finishes the game (or loses) a prompt alert appears asking for t
 - Add more difficult levels with unique boards
 - More Intelligent movements for the squirrels
 
+## Wins and Challenges
+
+# Wins
+- Successfully creating functions for the movements of the squirrels, especially for how the squirrels exit the holding area.
+- Implmenting a custom CSS sytling
+- Learning how to utilise localStorage for the high scoreboard
+
+# Challenges
+- Fixing the bugs for when the Winston eats the chicken and the dog balls return to the holding area
+
 ## Lessons learned
 
 I am very proud that I was able to create this game after only 3 weeks of training. I think I learned valuable time management skills, especially in ensuring I had an MVP completed with enough time to add in extra content and styling.
