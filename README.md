@@ -187,13 +187,13 @@ When the player finishes the game (or loses) a prompt alert appears asking for t
 
 ## Wins and Challenges
 
-# Wins
+### Wins
 - Successfully creating functions for the movements of the squirrels, especially for how the squirrels exit the holding area.
-- Implmenting a custom CSS sytling
+- Implmenting a custom CSS sytling, including creating the graphic for the Winston icon. 
 - Learning how to utilise localStorage for the high scoreboard
 
-# Challenges
-- Fixing the bugs for when the Winston eats the chicken and the dog balls return to the holding area
+### Challenges
+- Fixing the bugs for when the Winston eats the chicken and the dog balls return to the holding area. To accomplish this, I hard coded in logic to ensure that dog balls could not be added to the squirrel class when they were in the holding area and that squirrels could not move outside the holding area until after the setInterval had ended for the frightened state. 
 
 ## Lessons learned
 
