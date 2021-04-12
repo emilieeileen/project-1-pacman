@@ -31,6 +31,7 @@ You can play the game here (it works best on a desktop): https://emilieeileen.gi
 ## Screenshots
 
 Homepage
+
 ![Home page for The Adventures of Winston](imgs/homepage.png)
 
 Gameboard 
@@ -38,6 +39,7 @@ Gameboard
 ![GameBoard](imgs/gameboard.png)
 
 Gameboard with Squirrels as Squeaky Toys
+
 ![close up of gameboard with squeaky toys activated](imgs/squeakytoy_gameboard.png)
 ### Board layout 
 
